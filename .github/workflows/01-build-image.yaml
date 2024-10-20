@@ -49,7 +49,7 @@ jobs:
           format: 'table'
           exit-code: '1'
           ignore-unfixed: true
-          vuln-type: 'os,library'0
+        vuln-type: 'os,library'0
           severity: 'CRITICAL,HIGH'
 
       - name: Push image
@@ -69,5 +69,6 @@ jobs:
             - auto-pr
           draft: false
           allow_no_diff: false
+
 
          
