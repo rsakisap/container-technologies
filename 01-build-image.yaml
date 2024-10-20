@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3  # Atualize para a versão v3
+        uses: actions/checkout@v4.2.1  # Atualize para a versão v3
 
       - name: Build Docker image
         run: |
