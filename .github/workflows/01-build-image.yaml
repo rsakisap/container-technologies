@@ -1,0 +1,25 @@
+name: Build Docker Image
+
+# Evento que aciona o workflow
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# Jobs que serão executados
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Build Docker image
+        run: |
+          docker build -t rsakis/container-technologies:v1.0.1 .
+
+         
