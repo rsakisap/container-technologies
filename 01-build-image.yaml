@@ -14,9 +14,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4.2.1  # Atualize para a versão v3
+        uses: actions/checkout@v3  # Atualizado para a versão v3
 
       - name: Build Docker image
         run: |
           docker build -t rsakis/container-technologies:v1.0.1 .
+
 
